@@ -33,18 +33,20 @@ do
                     stud_mark=$(( ${final_no}*5 ))
                     stud_mark=$(( 50-${stud_mark} ))
                     echo "${i} has incorrect output (${final_no} lines are not matching)."
-
                     # echo ${stud_mark}
             else 
+                    final_no=0
                     echo "${i} has Correct output."
 
             fi
-            echo "${i} has earned a score of ${stud_mark} / ${Maximum}"
+            echo "${i} has earned a score of ${stud_mark} / ${MaxMark}"
+            python3 mail.py ${i} ${stud_mark} ${final_no} hangman.python3@gmail.com
             echo ""
             echo "----------------------------------------------------"
-            # rm students/${i}/temp.txt
+            rm students/${i}/temp.txt
     else
         echo ${i} "have no turened in Assignment."
+        python3 mail.py ${i} '' '' hangman.python3@gmail.com
         echo ""
         echo "----------------------------------------------------"
     fi
