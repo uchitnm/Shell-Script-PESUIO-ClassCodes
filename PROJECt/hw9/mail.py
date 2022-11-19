@@ -1,8 +1,8 @@
 import sys
 import smtplib
 
-username = 'hangman.python3@gmail.com'
-userpassword = 'cbyiyfjoqtfjarsv'
+username = 'username'
+userpassword = 'password'
 
 subject = 'Output Result,'
 
