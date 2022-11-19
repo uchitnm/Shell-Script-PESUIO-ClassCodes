@@ -7,7 +7,7 @@ userpassword = 'cbyiyfjoqtfjarsv'
 subject = 'Output Result,'
 
 if str(sys.argv[3]):
-    body = f'{sys.argv[1]} got {sys.argv[2]} as he/she have made {sys.argv[3]}.'
+    body = f'{sys.argv[1]} got {sys.argv[2]} as he/she have {sys.argv[3]} incorrect lines.'
 else:
     body = f'{sys.argv[1]} has not turned in his/her Assignmet.'
 

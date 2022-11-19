@@ -3,8 +3,10 @@
 # |                                                                                                                                 |
 # |                                  Course name  : "How to be a command line hacker : Shell Scripting"                             |
 # |                                                                                                                                 |
-# |                                  Programed by :  Uchit N M                                                                      |
-# |                                                 Aryan Anand                                                                     |
+# |                                  Programed by : Team 5                                                                          |
+# |                                                  - Uchit N M                                                                    |
+# |                                                  - Aryan Anand                                                                  |
+# |                                                                                                                                 |
 # |                                                                                                                                 |
 # |                                  Mentor       :  Kavya Jain                                                                     |
 # |                                                                                                                                 |
@@ -59,7 +61,7 @@ for i in ${dir_cont}; do
             stud_mark=$((${final_no} * 5))
             stud_mark=$((${MaxMark} - ${stud_mark}))
 
-            if [ ${stud_mark} ] <0; then
+            if [[ ${stud_mark}  < 0 ]]; then
                 stud_mark=0
             fi
             echo "${i} has incorrect output (${final_no} lines are not matching)."
